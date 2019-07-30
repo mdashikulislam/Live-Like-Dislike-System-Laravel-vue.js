@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85d52489-43f5-4ea2-9577-42f83acbd9fb" name="Default Changelist" comment="" />
+    <list default="true" id="85d52489-43f5-4ea2-9577-42f83acbd9fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Like.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_30_214507_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_30_233157_create_likes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/post.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/head.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/like.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/like.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +35,17 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Blade" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -108,7 +141,12 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1OkRp0C8bKSgWexFACr0MFcvKiz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -141,11 +179,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564519786537</updated>
-      <workItem from="1564519787860" duration="1783000" />
+      <workItem from="1564519787860" duration="10155000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
