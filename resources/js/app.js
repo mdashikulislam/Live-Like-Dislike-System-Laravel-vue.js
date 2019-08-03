@@ -20,7 +20,7 @@ const app = new Vue({
             .then(response => {
                 this.blog = response.data
             })
-            .catch(function (error) {
+            .catch(error => {
                 console.log(error);
             });
     }

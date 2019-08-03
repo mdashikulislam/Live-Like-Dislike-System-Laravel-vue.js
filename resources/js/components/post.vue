@@ -14,7 +14,8 @@
                 Posted By <a href="">{{posted_by}}</a> {{created_at}}
                 <a href="" @click.prevent="likeit">
                     <small>{{likeCount}}</small>
-                    <i class="fa fa-thumbs-up"></i>
+                    <i class="fa fa-thumbs-up" v-if="likeCount == 0"></i>
+                    <i class="fa fa-thumbs-up" style="color: greenyellow" v-else="likeCount > 0"></i>
                 </a>
             </p>
         </div>
@@ -41,7 +42,11 @@
                         id : this.postid
                     })
                         .then(response => {
-                            this.likeCount +=1;
+                            if (response.data == 'deleted'){
+                                this.likeCount -=1;
+                            }else{
+                                this.likeCount +=1;
+                            }
                             console.log(response)
                         })
                         .catch(function (error) {

@@ -20,9 +20,16 @@ class PostController extends Controller
     }
 
     public function savelike(Request $request){
-        $like = new Like();
-        $like->post_id = $request->id;
-        $like->user_id = \Auth::id();
-        $like->save();
+        $likeCheck = Like::where(['user_id'=>\Auth::id(),'post_id'=>$request->id])->first();
+        if ($likeCheck){
+            Like::where(['user_id'=>\Auth::id(),'post_id'=>$request->id])->delete();
+            return 'deleted';
+        }else{
+            $like = new Like();
+            $like->post_id = $request->id;
+            $like->user_id = \Auth::id();
+            $like->save();
+        }
+
     }
 }

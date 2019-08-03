@@ -1753,6 +1753,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['title', 'subtitle', 'body', 'posted_by', 'created_at', 'login', 'postid', 'likes'],
   data: function data() {
@@ -1771,7 +1772,12 @@ __webpack_require__.r(__webpack_exports__);
         axios.post('/savelike', {
           id: this.postid
         }).then(function (response) {
-          _this.likeCount += 1;
+          if (response.data == 'deleted') {
+            _this.likeCount -= 1;
+          } else {
+            _this.likeCount += 1;
+          }
+
           console.log(response);
         })["catch"](function (error) {
           console.log(error);
@@ -37156,7 +37162,12 @@ var render = function() {
           [
             _c("small", [_vm._v(_vm._s(_vm.likeCount))]),
             _vm._v(" "),
-            _c("i", { staticClass: "fa fa-thumbs-up" })
+            _vm.likeCount == 0
+              ? _c("i", { staticClass: "fa fa-thumbs-up" })
+              : _c("i", {
+                  staticClass: "fa fa-thumbs-up",
+                  staticStyle: { color: "greenyellow" }
+                })
           ]
         )
       ])
